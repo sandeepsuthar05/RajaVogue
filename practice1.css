@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.main-container{
+    width: 100%;   height: contain;
+    background: rgb(198, 255, 198);
+}
+
+.welcome {
+    width: 40%;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+
+    float: left;
+}
+
+/* .welcome .img-box {
+    width: 100%;
+    min-height: 36vh;
+    background-color: rgb(181, 35, 35);
+    display: flex;
+    float: none;
+    justify-content: center;
+
+}
+*/
+
+
+.welcome .explore-text {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(255, 224, 202);
+
+}
+
+.welcome .explore-text h2 {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 120px 20px 0 40px;
+    color: #941616;
+    text-decoration: underline;
+
+}
+
+.welcome .explore-text p {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 20px 30px 0 40px;
+    font-size: 30px;
+    color: #941616;
+}
+
+.welcome .explore-text i {
+    font-size: 70px;
+    padding: 10px 0 0 500px;
+    color: #941616;
+    
+
+}
+
+
+
+.container {
+    width: 60%;
+    min-height: 100vh;
+    background: rgb(255, 224, 202);
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    left: 40%;
+}
+
+.container .main1 {
+    width: 150px;
+    height: 600px;
+    background-image: url(images/ilya-gorborukov-syx5GyrkeZ8-unsplash.jpg);
+    background-size: cover;
+    /* border-right: 1px solid black;
+    border-bottom: 1px solid black; */
+    float: left;
+    position: relative;
+    transition: 0.5s;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+    animation: expandBox1 6s infinite ease-in-out;
+    animation-delay: 1.5s;
+}
+
+
+.container .main2 {
+    width: 150px;
+    height: 600px;
+    background-image: url(images/rayul-_M6gy9oHgII-unsplash.jpg);
+    background-size: cover;
+    /* border-right: 1px solid black;
+    border-bottom: 1px solid black; */
+    float: left;
+    position: relative;
+    transition: 0.5s;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+    animation: expandBox2 6s infinite ease-in-out;
+    animation-delay: 3s;
+}
+
+
+
+
+.container .main3 {
+    width: 150px;
+    height: 600px;
+    background-image: url(images/andrew-davie-GTvSYaxBSEw-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* border-right: 1px solid black;
+    border-bottom: 1px solid black; */
+    float: left;
+    position: relative;
+    transition: 0.5s;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    animation: expandBox3 6s infinite ease-in-out;
+    animation-delay: 4.5s;
+}
+
+
+
+
+/* .container .main1:hover,
+.container .main2:hover,
+.container .main3:hover {
+    width: 300px;
+
+
+} */
+
+.view1 {
+    display: none;
+
+}
+
+.container .main1:hover .view1 {
+    display: block;
+}
+
+h1 {
+    padding: 2px;
+    font-family: "poppins";
+    transition: 0.5s;
+    transform: 0.15s;
+}
+
+p {
+    padding: 5px;
+    font-family: "poppins";
+    font-size: 20px;
+    transition: 0.5s;
+    transform: 0.15s;
+}
+
+
+
+
+
+
+
+@keyframes expandBox1 {
+0%, 33.33% {
+width: 150px;
+}
+16.66% {
+width: 300px;
+}
+}
+
+@keyframes expandBox2 {
+33.33%, 66.66% {
+width: 150px;
+}
+50% {
+width: 300px;
+}
+}
+
+@keyframes expandBox3 {
+66.66%, 100% {
+width: 150px;
+}
+83.33% {
+width: 300px;
+}
+}
+
+
+
+.main-container > .second-container {
+    width: 100%;
+    height: 100vh;
+    background: #941616;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
